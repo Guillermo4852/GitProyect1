@@ -1,4 +1,20 @@
 //        Extra Exercise  9
+
+ #include <stdio.h>
+
+ int main(int argc, char *argv[])
+ {
+int i = 0;
+ while (i < 25) {
+ printf("%d", i);
+ i++;
+ }
+ return 0;
+}
+
+
+
+
 //Make these loops count backward by using i-- to start at argc and count down to 0. You may have to do some math to make the array indexes work right.
 #include <stdio.h>
 
