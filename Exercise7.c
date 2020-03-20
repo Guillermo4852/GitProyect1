@@ -38,3 +38,25 @@ printf("Which means you should care %d%%.\n",care_percentage); // Here we tell t
 
 return 0;
 }
+//                          Bellow extra credits
+
+//    Make the number you assign to universe_of_defects various sizes until you get a warning from the compiler.
+long universe_of_defects = 1L * 1024L * 1024L * 1024L * 1024L * 1024L * 1024L * 1024L * 1024L; //multiplying by 8 times you get a system warning
+
+//    What do these really huge numbers actually print out?
+//the more decimals it has; The entire universe will have 0 errors.
+
+//    Change long to unsigned long and try to find the number that makes that one too big.
+// Step 1
+unsigned long universe_of_defects = 1UL * 1024UL * 1024UL * 1024UL; // Change everything as L by UL to be unsigned long
+printf("The entire universe has %lu bugs.\n", universe_of_defects);//Tell to the user the same question but with the change of unigned long
+// Step 2
+// include limits.h and use ULONG_MAX to get the max value of unsigned long and plus 1 more to make it bigger than the ULONG_MAX:
+unsigned long universe_of_defects = ULONG_MAX + 1UL;//here we declare the maximun value plus 1 to make it the most bigger
+printf("The entire universe has %lu bugs.\n", universe_of_defects);// here just we say wat's is the bigger number
+
+//    Go search online to find out what unsigned does.
+// unsigned means the integer doesn't have negative posibilities
+
+//    Try to explain to yourself (before I do in the next exercise) why you can multiply a char and an int.
+//It can be multiply because c allow do it changing the value kind to int
